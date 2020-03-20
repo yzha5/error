@@ -20,16 +20,16 @@ func FatalfIfErr(err error, msg string) {
 
 	if err != nil {
 		log.Fatalf("%s[error]%s %s[%s]%s %s%s%s：\n%s%v%s",
-			RedBg,
-			Reset,
-			CyanBg,
+			redBg,
+			reset,
+			cyanBg,
 			fileWithPath,
-			Reset,
-			RedBg,
+			reset,
+			redBg,
 			msg,
-			Reset,
-			Red,
+			reset,
+			red,
 			err,
-			Reset)
+			reset)
 	}
 }
